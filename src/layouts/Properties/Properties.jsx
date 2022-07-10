@@ -49,8 +49,9 @@ function Properties() {
                 >
                 {
                  listings.map((property) => {
-                   console.log('listings.map property = ',property)
-                    return (<Listing key={property.id}  property={property}/>);
+                   console.log('listings.map property = ',property);
+                   
+                   return (<Listing key={property.id}  property={property}/>);
                 })
                 }
                 </OwlCarousel>
