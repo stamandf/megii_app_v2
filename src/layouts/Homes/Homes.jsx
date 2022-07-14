@@ -30,6 +30,7 @@ function Homes(props) {
             margin={20}
             responsiveClass={true}
             responsive={options}
+            key={`carousel_${listings.length}`}
             >
             {
               listings.map((property) => {
