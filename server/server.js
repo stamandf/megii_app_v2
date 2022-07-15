@@ -77,7 +77,9 @@ app.use(cors(), express.static(publicPath));
 app.get('/api/listings', (request, response) => {
     response.json(listings);
 });
-
+app.get('*', (req,res) => {
+    res.sendFile(path.join(publicPath, 'index.html'));
+});
 app.listen(PORT, () => {
     console.log('Server running on port', PORT);
 })
