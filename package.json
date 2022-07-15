@@ -46,7 +46,7 @@
     "compress:css": "sass public/css/style.prefix.css public/css/style.css",
     "compile:bootsass": "sass public/scss/bootstrap/bootstrap.scss css/bootstrap/bootstrap.css",
     "mini:boot": "minify css/bootstrap/bootstrap.css > css/bootstrap.min.css",
-    "express": "node src/server.js"
+    "express": "node server/server.js"
   },
   "eslintConfig": {
     "extends": [

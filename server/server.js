@@ -1,7 +1,9 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const publicpath = path.join(__dirname, '..', 'public');
+const publicPath = path.join(__dirname, '..', 'public');
+
 const PORT = process.env.PORT || 3001;
 
 
@@ -67,9 +69,10 @@ const listings = [
 console.log('In server!');
 console.log('listings = ', listings);
 console.log('process.env = ', process.env);
-console.log('public path = ', publicpath);
+console.log('__dirname = ', __dirname);
+console.log('publicPath = ',publicPath);
 
-app.use(cors());
+app.use(cors(), express.static(publicPath));
 
 app.get('/api/listings', (request, response) => {
     response.json(listings);
