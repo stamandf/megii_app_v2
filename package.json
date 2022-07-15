@@ -35,7 +35,7 @@
     "sass": "^1.53.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -46,7 +46,8 @@
     "compress:css": "sass public/css/style.prefix.css public/css/style.css",
     "compile:bootsass": "sass public/scss/bootstrap/bootstrap.scss css/bootstrap/bootstrap.css",
     "mini:boot": "minify css/bootstrap/bootstrap.css > css/bootstrap.min.css",
-    "express": "node server/server.js"
+    "express": "node server/server.js",
+    "start": "node server/server.js"
   },
   "eslintConfig": {
     "extends": [
