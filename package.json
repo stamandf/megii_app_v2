@@ -47,7 +47,8 @@
     "compile:bootsass": "sass public/scss/bootstrap/bootstrap.scss css/bootstrap/bootstrap.css",
     "mini:boot": "minify css/bootstrap/bootstrap.css > css/bootstrap.min.css",
     "express": "node server/server.js",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run react"
   },
   "eslintConfig": {
     "extends": [
