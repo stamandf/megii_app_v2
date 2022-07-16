@@ -36,7 +36,7 @@
   },
   "scripts": {
     "react": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build; cp -r build server",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch:sass": "sass public/scss/style.scss public/css/style.css -w",
