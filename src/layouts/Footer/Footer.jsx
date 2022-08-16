@@ -6,7 +6,7 @@ import './Footer.scss';
 
 function Footer() {
   const today = new Date();
-  const {t, i18n } = useTranslation();
+  const {t} = useTranslation();
 
     return (
         <footer className="site-footer">

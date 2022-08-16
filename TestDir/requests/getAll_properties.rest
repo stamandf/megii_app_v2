@@ -1,0 +1,7 @@
+GET http://localhost:3001/properties
+
+###
+GET http://localhost:3001/properties/fr
+
+###
+GET http://localhost:3001/properties/en

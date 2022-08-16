@@ -10,7 +10,7 @@ import { useTranslation } from 'react-i18next';
 const OurTeam = () => {
     let columns = [];
     let finalResult = [];
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const renderRows = () => {
         brokers.forEach((person, index) => {

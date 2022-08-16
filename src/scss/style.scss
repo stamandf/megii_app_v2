@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 /* Boostrap */
 @import './bootstrap/bootstrap.scss';
+@import './bootstrap/mixins';
 /* Base */
 @import './_site-base.scss';
 /* Navbar */

@@ -28,7 +28,7 @@ i18n
               lang: 'FR'
           },
           message: {
-            button1: 'Under Contruction',
+            button1: 'View Properties',
             button2: 'Coming soon!'
           },
           sectionTeam: {
@@ -47,6 +47,13 @@ i18n
             copyright: 'All rights reserved',
             address1:'274-729 Bourget Street',
             address2:'Montreal, Quebec H4C 2M6'
+          },
+          property: {
+            title: 'This property has mls number = ',
+            link: 'Go to link: '
+          },
+          properties: {
+            title: 'Our Properties',
           }
         }
       },
@@ -61,7 +68,7 @@ i18n
               lang: 'EN'
           },
           message: {
-            button1: 'En Contruction',
+            button1: 'Voir Propriétés',
             button2: 'À bientôt!'
           },
           sectionTeam: {
@@ -80,6 +87,13 @@ i18n
             copyright:'Tous droits réservés',
             address1:'274-729, rue Bourget',
             address2:'Montréal (Québec) H4C 2M6'
+          },
+          property: {
+            title: 'Cette propriété a le numéro mls = ',
+            link: 'Suivez le lien: '
+          },
+          properties: {
+            title: 'Nos Propriétés',
           }
         }
       }
