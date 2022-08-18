@@ -10,6 +10,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import listingsService from './services/actions/listingsService';
 import './i18n';
+import 'animate.css';
 
 listingsService
   .getAll()

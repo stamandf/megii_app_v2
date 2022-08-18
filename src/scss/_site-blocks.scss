@@ -1210,6 +1210,18 @@
 
 .media-38289 {
   color: $white;
+  box-shadow: 0px 5px 21px -14px rgb(0, 0, 0, 1.4);
+  -webkit-box-shadow: 0px 5px 21px -14px rgb(0, 0, 0, 1.4); 
+  &:hover {
+    animation-name: pulse;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+    box-shadow: 0px 5px 21px -8px rgb(0, 0, 0, 1.4);
+    animation-timing-function: ease-in-out;
+    // animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+  }
+
   .sq, .bed, .bath {
     font-size: 13px;
     .wrap-icon {
@@ -1226,6 +1238,15 @@
     padding: 30px;
     background: #222;
   }
+  .bottomCard {
+    padding: 30px;
+    background: #616161;
+  }
+  .cardShadow {
+    -webkit-box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.78); 
+    box-shadow: 5px 5px 14px 5px rgba(0,0,0,0.78);
+  }
+
 }
 
 .person-29381 {
