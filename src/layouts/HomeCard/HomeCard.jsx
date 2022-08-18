@@ -7,7 +7,7 @@ const HomeCard = (props) => {
   console.log('IN HomeCard COMPONENT WITH PROPS = ', props);
   return (
     <div class="col-md-4 mb-5">
-            <div className="item media-38289">
+            <div className="item media-homeCard">
               <Link to={`/properties/${property.id}`} className="d-block"><img src={property.photo_main} alt="Image" className="img-fluid"/></Link>
               <div className="bottomCard">
                 <div className="d-flex justify-content-between mb-3">
