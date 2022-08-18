@@ -73,16 +73,142 @@
 // Pills
 //
 
-.nav-pills {
-  .nav-link {
-    @include border-radius($nav-pills-border-radius);
-  }
+// .nav-pills {
+//   .nav-link {
+//     @include border-radius($nav-pills-border-radius);
+//   }
 
-  .nav-link.active,
-  .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    background-color: $nav-pills-link-active-bg;
-  }
+//   .nav-link.active,
+//   .show > .nav-link {
+//     color: $nav-pills-link-active-color;
+//     background-color: $nav-pills-link-active-bg;
+//   }
+// }
+//TABULATION
+.nav-pills{
+	font-size: 18px;
+	font-weight: 400;
+	display: inline-block;
+	li{
+		display: inline-block;
+		a{
+			margin-right: 2px;
+			color: rgba(0,0,0,.4) !important;
+			&.active{
+				color: $black !important;
+				background: transparent !important;
+			}
+		}
+	}
+}
+.pills{
+	margin-top: 40px;
+	.tab-pane{
+		padding: 2em;
+		border-top: 1px solid rgba(0,0,0,.1);
+	}
+	.features{
+		margin: 0;
+		padding: 0;
+		li{
+			list-style: none;
+			span{
+				font-size: 20px;
+				margin-right: 15px;
+			}
+			&.check{
+				span{
+					color: green;
+					font-size: 14px;
+				}
+			}
+			&.remove{
+				span{
+					color: red;
+				}
+			}
+		}
+	}
+	.head{
+		font-size: 18px;
+		margin-bottom: 30px;
+		font-weight: 600;
+	}
+	.review{
+		width: 100%;
+		margin-bottom: 30px;
+		.user-img{
+			width: 80px;
+			height: 80px;
+			@include border-radius(50%);
+		}
+		.desc{
+			width: calc(100% - 100px);
+			margin-left: 30px;
+			h4{
+				width: 100%;
+				margin-bottom: 10px;
+				span{
+					width: 49%;
+					display: inline-block;
+					&:first-child{
+						font-size: 16px;
+					}
+					&:last-child{
+						font-size: 13px;
+						color: lighten($black,70%);
+					}
+				}
+			}
+			.star{
+				width: 100%;
+				span{
+					width: 49%;
+					display: inline-block;
+				}
+				i{
+					color: $secondary;
+				}
+				.reply{
+					padding: 2px 10px;
+					background: lighten($black,94%);
+					@include border-radius(2px);
+					i{
+						color: lighten($black,50%);
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.wrap{
+		padding: 2em;
+		background: lighten($black,98%);
+	}
+	.rating-wrap{
+		width: 100%;
+		display: block;
+		.star{
+			display: block;
+			width: 100%;
+			&:last-child{
+				margin-bottom: 0;
+			}
+			span{
+				display: inline-block;
+				color: lighten($black,70%);
+				i{
+					color: $primary;
+				}
+				&:first-child{
+					width: 62%;
+				}
+				&:last-child{
+					width: 32%;
+				}
+			}
+		}
+	}
 }
 
 
