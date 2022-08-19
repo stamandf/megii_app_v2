@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import NavItems from '../NavItems/NavItems';
 import { useTranslation } from 'react-i18next';
 import logo from '../../assets/images/logoWhite.svg';
@@ -42,7 +43,7 @@ function Footer() {
                 {/* All rights reserved | This template is made with ♥︎ Colorlib by https://colorlib.com */}
                 Copyright &copy; {today.getFullYear()} {t("footer.copyright")} | MEGII
                 </p>
-                <img className="footer-logo" src={logo} alt="logo" />
+                <Link to="/"><img className="footer-logo" src={logo} alt="logo" /></Link>
                 </div>
               </div>
             </div>

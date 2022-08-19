@@ -2,6 +2,9 @@
     height: 8rem;
     width: auto;
     margin: 0 auto;
+    &:hover {
+        filter: brightness(0) saturate(100%) invert(57%) sepia(48%) saturate(4421%) hue-rotate(0deg) brightness(101%) contrast(102%);
+    }
 }
 
 .mission-text {

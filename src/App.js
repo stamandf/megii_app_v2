@@ -8,15 +8,12 @@ import NotFound from './layouts/NotFound/NotFound.jsx';
 
 import { useTranslation } from 'react-i18next';
 
-
 function App({listings}) {
   const { t } = useTranslation();
 
   console.log('** APP COMPONENT WITH LISTINGS = ', listings);
 
   return (
-    <BrowserRouter>
-      <div className="App">
         <Routes>
           <Route path="/">
               <Route index element={<HomePage listings={listings}/>}/>
@@ -27,8 +24,6 @@ function App({listings}) {
           </Route>
           <Route path="*" element={<NotFound/>} />
         </Routes>
-      </div>
-    </BrowserRouter>
   );
 }
 

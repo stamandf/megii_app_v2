@@ -2,6 +2,7 @@ import React from 'react';
 import PropertyDetails from '../../layouts/PropertyDetails/PropertyDetails';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Footer from '../../layouts/Footer/Footer';
 
 function PropertyPage({listings}) {
     const mls_no = useParams().mls_no;
@@ -17,6 +18,7 @@ function PropertyPage({listings}) {
         <div>
         <h1>{t("property.title")} {mls_no} </h1>
         <PropertyDetails property={propertyFound} />
+        <Footer/>
         </div>
     );
 }
