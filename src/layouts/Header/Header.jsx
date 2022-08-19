@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import logo from '../../assets/images/logoWhite.svg';
 import { useTranslation } from 'react-i18next';
 import NavItems from '../NavItems/NavItems';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [isOpen, setMobileMenu] = useState(false);
@@ -50,7 +51,8 @@ function Header() {
             <div className="row align-items-center justify-content-between position-relative">
               <div className="col-3 ">
                 <div className="site-logo">
-                  <a href="index.html"><img className="site-logo__image" src={logo} alt="logo" /></a>
+                  <Link to="/"><img className="site-logo__image" src={logo} alt="logo" /></Link>
+                  {/* <a href="index.html"><img className="site-logo__image" src={logo} alt="logo" /></a> */}
                 </div>
               </div>
               <div className="col-9 text-right">

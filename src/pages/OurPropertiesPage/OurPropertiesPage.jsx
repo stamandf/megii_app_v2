@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../../layouts/Header/Header';
 import HeroProperties from '../../layouts/HeroProperties/HeroProperties';
 import AllHomes from '../../layouts/AllHomes/AllHomes';
+import Footer from '../../layouts/Footer/Footer';
 import { useTranslation, getI18n } from 'react-i18next';
 
 
@@ -16,6 +17,7 @@ function OurPropertiesPage({listings}) {
             <Header/>
             <HeroProperties/>
             <AllHomes listings={listings}/>
+            <Footer/>
         </div>
     )
 }
