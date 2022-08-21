@@ -19,7 +19,6 @@ i18n
     resources: {
       en: {
         translation: {
-          // here we will place our translations...
           navMenu: {
               properties: 'Properties',
               brokers: 'Brokers',
@@ -50,7 +49,8 @@ i18n
           },
           property: {
             title: 'This property has mls number = ',
-            link: 'Go to link: '
+            link: 'Go to link: ',
+            details: ''
           },
           properties: {
             title: 'Our Properties',
@@ -59,7 +59,6 @@ i18n
       },
       fr: {
         translation: {
-          // here we will place our translations...
           navMenu: {
               properties: 'Propriétés',
               brokers: 'Courtiers',
@@ -90,7 +89,8 @@ i18n
           },
           property: {
             title: 'Cette propriété a le numéro mls = ',
-            link: 'Suivez le lien: '
+            link: 'Suivez le lien: ',
+            details: ''
           },
           properties: {
             title: 'Nos Propriétés',

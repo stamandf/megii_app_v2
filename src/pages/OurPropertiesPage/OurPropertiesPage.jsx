@@ -15,7 +15,7 @@ function OurPropertiesPage({listings}) {
     return (
         <div>
             <Header/>
-            <HeroProperties/>
+            <HeroProperties heroWrap={'hero-wrap-3'} heroTitle={"properties.title"} />
             <AllHomes listings={listings}/>
             <Footer/>
         </div>

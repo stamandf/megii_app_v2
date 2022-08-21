@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import HeroProperties from '../HeroProperties/HeroProperties';
+import ImageGallery from 'react-image-gallery';
 import './PropertyDetails.scss';
 
 function PropertyDetails({property}) {
@@ -16,14 +18,21 @@ function PropertyDetails({property}) {
             setshowDescriptions(!showDescriptions);
         }
     }
+
     return (
         <div>
             Property  Details here. with mls_no = {property.id}
             <div className='container'>
+
+         
                 <div className='row justify-content-center'>
                     <div className='col-md-12'>
                         <div className='property-details'>
-                            <img  className='img' src={property.photo_main}/>
+                        <ImageGallery 
+                            items= {property.images} 
+                            showBullets={true}
+                        />   
+                            {/* <img  className='img' src={property.photo_main}/> */}
                             <div className='text'>
                                 <span className='subheading'>Montréal</span>
                                 <h2>{property.address}</h2>

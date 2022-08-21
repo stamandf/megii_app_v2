@@ -19,10 +19,14 @@
 		right: 0;
 		bottom: 0;
 		content: '';
+		// opacity: .5;
 		background: rgba($black, .8);
+		// background: rgba($darken, .8);
+		// background: $darken;
+		// @include gradient-background();
 		height: 850px;
 	}
-	&.hero-wrap-2 {
+	&.hero-wrap-2{
 		height: 500px !important;
 		position: relative;
 		.overlay{
@@ -32,42 +36,6 @@
 		}
 		.slider-text{
 			height: 500px !important;
-		}
-	}
-	&.hero-wrap-3 {
-		height: 400px !important;
-		position: relative;
-		.overlay{
-			width: 100%;
-			opacity: .8;
-			height: 400px;
-		}
-		.slider-text{
-			height: 400px !important;
-		}
-	}
-	&.hero-wrap-4 {
-		height: 300px !important;
-		position: relative;
-		.overlay{
-			width: 100%;
-			opacity: .8;
-			height: 300px;
-		}
-		.slider-text{
-			height: 300px !important;
-		}
-	}
-	&.hero-wrap-5{
-		height: 165px !important;
-		position: relative;
-		.overlay{
-			width: 100%;
-			opacity: .8;
-			height: 165px;
-		}
-		.slider-text{
-			height: 165px !important;
 		}
 	}
 }
