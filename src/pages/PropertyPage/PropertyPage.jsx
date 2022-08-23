@@ -20,7 +20,7 @@ function PropertyPage({listings}) {
     return (
         <div>
         <Header />
-        <HeroProperties heroWrap={'hero-wrap-5'} heroTitle={"property.details"} />
+        <HeroProperties heroWrap={'hero-wrap-3'} heroTitle={"property.details"} />
         {/* <h1>{t("property.title")} {mls_no} </h1> */}
         <PropertyDetails property={propertyFound} />
         <Footer/>

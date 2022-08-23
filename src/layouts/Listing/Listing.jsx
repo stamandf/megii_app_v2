@@ -1,12 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './listing.scss'
 
 const Listing = (props) => {
   const property = props.property;
-  // console.log('IN LISTING COMPONENT WITH PROPS = ', props);
   return (
             <div className="item media-38289">
-              <a href="property-single.html" className="d-block"><img src={property.photo_main} alt="Property" className="img-fluid"/></a>
+              <Link to={`/properties/${property.id}`} className="d-block"><img src={property.photo_main} alt="Property" className="img-fluid"/></Link>
               <div className="text">
                 <div className="d-flex justify-content-between mb-3">
                   <div className="sq d-flex align-items-center"><span className="wrap-icon icon-fullscreen"></span> <span>{property.size}</span></div>

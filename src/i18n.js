@@ -50,7 +50,7 @@ i18n
           property: {
             title: 'This property has mls number = ',
             link: 'Go to link: ',
-            details: ''
+            details: 'Property Details'
           },
           properties: {
             title: 'Our Properties',
@@ -90,7 +90,7 @@ i18n
           property: {
             title: 'Cette propriété a le numéro mls = ',
             link: 'Suivez le lien: ',
-            details: ''
+            details: 'Détails propriétés'
           },
           properties: {
             title: 'Nos Propriétés',

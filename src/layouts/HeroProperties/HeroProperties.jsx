@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './HeroProperties.scss';
 
-function HeroProperties({heroWrap, heroTitle}) {
+function HeroProperties({heroWrap, heroTitle, showAddress}) {
   // const heroWrap = props.heroWrap;
   // const heroTitle = props.heroTitle;
   const { t } = useTranslation();
@@ -14,9 +14,11 @@ function HeroProperties({heroWrap, heroTitle}) {
       {/* <section className="hero-wrap hero-wrap-3 backgroundImg9" data-stellar-background-ratio="0.5"> */}
       <div className="overlay"></div>
       <div className="container">
-        <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+        <div className="row no-gutters slider-text align-items-center justify-content-center text-center">
+        {/* <div className="row no-gutters slider-text js-fullheight align-items-center justify-content-center"> */}
           <div className="col-md-9 ftco-animate pb-0 text-center">
-            <h1 className="mb-3 text-white">{t(heroTitle)}</h1>
+            <h1 className={showAddress ? "icon-room mt-4 mr-3 text-primary" :"mb-3 text-white"}>{t(heroTitle)}</h1>
+            {/* <h1 className="mb-3 text-white">{t(heroTitle)}</h1> */}
             {/* <h1 className="mb-3 text-white">{t("properties.title")}</h1> */}
           </div>
         </div>
