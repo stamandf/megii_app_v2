@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import HeroProperties from '../HeroProperties/HeroProperties';
+import Broker from '../Broker/Broker';
+import { brokers } from '../../db/brokerList';
 import ImageGallery from 'react-image-gallery';
 import './PropertyDetails.scss';
 
@@ -54,36 +56,45 @@ function PropertyDetails({property}) {
                                 </ul>
                             </div>
                             <div className='tab-content' id='pills-tabContent'>
-                            <div className={showFeatures ? "tab-pane fade show active" : "tab-pane fade" } id="pills-feature" role="tabpanel" aria-labelledby="pills-features-tab">
-                                <div className='row'>
-                                    <div className="col-md-4">
-                                        <ul className="features">
-                                            <li className="check"><span className="fa fa-check-circle"></span>Lot Area: 5000 Sq ft</li>
-                                            <li className="check"><span className="fa fa-check-circle"></span>Bed Rooms: {property.beds}</li>
-                                            <li className="check"><span className="fa fa-check-circle"></span>Bath Rooms: {property.baths}</li>
-                                            <li className="check"><span className="fa fa-check-circle"></span>Luggage</li>
-                                            <li className="check"><span className="fa fa-check-circle"></span>Garage: 2</li>
-                                        </ul>
+                                <div className={showFeatures ? "tab-pane fade show active" : "tab-pane fade" } id="pills-feature" role="tabpanel" aria-labelledby="pills-features-tab">
+                                    <div className='row'>
+                                        <div className="col-md-4">
+                                            <ul className="features">
+                                                <li className="check"><span className="fa fa-check-circle"></span>Lot Area: 5000 Sq ft</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Bed Rooms: {property.beds}</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Bath Rooms: {property.baths}</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Luggage</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Garage: 2</li>
+                                            </ul>
+                                        </div>
+                                        <div className="col-md-4">
+                                            <ul className="features">
+                                                <li className="check"><span className="fa fa-check-circle"></span>Floor Area: {property.size}</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Year Build:: 2019</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Water</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Stories: 2</li>
+                                                <li className="check"><span className="fa fa-check-circle"></span>Roofing: New</li>
+                                            </ul>
+                                        </div>
+                                        <p className='broker'></p>
+                                        <Broker className='broker' broker={brokers[0]} isOne={brokers.length === 1}/>
                                     </div>
-						    		<div className="col-md-4">
-						    			<ul className="features">
-						    				<li className="check"><span className="fa fa-check-circle"></span>Floor Area: {property.size}</li>
-						    				<li className="check"><span className="fa fa-check-circle"></span>Year Build:: 2019</li>
-						    				<li className="check"><span className="fa fa-check-circle"></span>Water</li>
-						    				<li className="check"><span className="fa fa-check-circle"></span>Stories: 2</li>
-						    				<li className="check"><span className="fa fa-check-circle"></span>Roofing: New</li>
-						    			</ul>
-						    		</div>
                                 </div>
-                            </div>
-                            <div className={showDescriptions ? "tab-pane fade show active" : "tab-pane fade" } id="pills-description" role="tabpanel" aria-labelledby="pills-descriptions-tab">
-						        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-							    <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
-						    </div>
+                                <div className={showDescriptions ? "tab-pane fade show active" : "tab-pane fade" } id="pills-description" role="tabpanel" aria-labelledby="pills-descriptions-tab">
+                                    <div className='row'>
+                                        <div className='col-md-7'>
+                                            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                            <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+                                        </div>
+                                        <p className='broker'></p>
+                                        <Broker broker={brokers[0]} isOne={brokers.length === 1}/>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    
             </div>
         </div>
 
